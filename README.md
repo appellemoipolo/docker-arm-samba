@@ -1,3 +1,15 @@
+#Fork from [dperson/samba](https://github.com/dperson/samba) scripts to run jeedom into container on arm computers
+
+
+It only consists in changing FROM instructions in Dockerfiles in order to get an ARM Debian:jessie version of the OS.
+
+Version used armhfbuild/debian:jessie.
+
+```
+docker build -t arm-samba .
+```
+
+
 [![logo](https://raw.githubusercontent.com/dperson/samba/master/logo.jpg)](https://www.samba.org)
 
 # Samba
