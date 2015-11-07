@@ -1,5 +1,4 @@
-FROM debian:jessie
-MAINTAINER David Personette <dperson@dperson.com>
+FROM armhfbuild/debian:jessie
 
 # Install samba
 RUN export DEBIAN_FRONTEND='noninteractive' && \
