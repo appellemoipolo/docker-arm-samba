@@ -9,6 +9,12 @@ Version used armhfbuild/debian:jessie.
 docker build -t arm-samba .
 ```
 
+Nice use today, for TTS with sonos & jeedom & docker
+
+```
+docker run -it -p 139:139 -p 445:445 -v /tmp/tts:/tmptts --name arm-samba-tts -d arm-samba -u "ttsuser;ttssecret" -s "tts;/tmptts"
+```
+
 
 [![logo](https://raw.githubusercontent.com/dperson/samba/master/logo.jpg)](https://www.samba.org)
 
