@@ -9,10 +9,10 @@ Version used armhfbuild/debian:jessie.
 docker build -t arm-samba .
 ```
 
-Nice use today, for TTS with sonos & jeedom & docker
+Nice use, for TTS with sonos & jeedom & docker, saving files in RAM only with /tmp on Cubox
 
 ```
-docker run -it -p 139:139 -p 445:445 -v /tmp/tts:/tmptts --name arm-samba-tts -d arm-samba -u "ttsuser;ttssecret" -s "tts;/tmptts"
+docker run -it -p 139:139 -p 445:445 -v /tmp/tts:/tmptts --name arm-samba-tts -d arm-samba -u "ttsuser;ttssecret" -s "tts;/tmptts;yes;yes;yes;all"
 ```
 
 
